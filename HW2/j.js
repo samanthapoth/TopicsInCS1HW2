@@ -1,10 +1,8 @@
 async function load(url, table){
-    const tableHead = document.querySelector("thead");
     const tableBody = document.querySelector("tbody");
     const response = await fetch(url);
     const data = await response.json();
     
-   // tableHead.innerHTML = "<tr></tr>";
     tableBody.innerHTML = "";
 
         for (i = data.data.length-1; i >= 0; i--) {
