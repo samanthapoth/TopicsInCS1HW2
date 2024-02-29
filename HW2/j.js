@@ -17,12 +17,4 @@ async function load(url, table){
         }
     }
 
-
-//for (const YearText of Year) {
-  //  const headerElement = document.createElement("th");
-    //headerElement.textContent = YearText;
-    //tableHead.querySelector("tr").appendChild(headerElement);
-
-
-
 load('https://datausa.io/api/data?drilldowns=Nation&measures=Population', document.querySelector("table"));
