@@ -5,6 +5,9 @@ async function load(url, table){
     
     tableBody.innerHTML = "";
 
+    // for loop that iterates through all 9 years of data supplies in the link. The for loop accesses each line of data and then accesses the year 
+    // and population element in each line. The year and population data are then added to the table with each year and its corresponding population 
+    // occupying a row. 
         for (i = data.data.length-1; i >= 0; i--) {
             const yearElement = document.createElement("td");
             yearElement.textContent = data.data[i].Year;
